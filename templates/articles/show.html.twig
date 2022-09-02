@@ -1,0 +1,36 @@
+{% extends 'layout/default.html.twig' %}
+
+{% block header %}
+
+  <header class="masthead text-center text-white">
+    <div class="masthead-content">
+      <div class="container px-5">
+        <h1 class="masthead-heading mb-0">
+     Afficher un article
+        </h1>
+      </div>
+    </div>
+  </header>
+
+{% endblock %}
+
+{% block content %}
+  <div class="container px-5">
+    <div class="row gx-5 align-items-center">
+      <div class="col-lg-6 order-lg-2">
+        <h1> {{ article.title }} </h1>
+ 
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <div class="p-5">
+          <p>
+            {{ article.excerpt }}
+          </p>
+          <p>
+            {{ article.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
