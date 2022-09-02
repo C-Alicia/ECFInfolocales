@@ -13,7 +13,6 @@
 {% endblock %}
 
 {% block content %}
-
   {% for articles in articles %}
     <div class="container px-4 px-lg-5">
       <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -25,6 +24,9 @@
               <h1 class="post-title">
                 {{ articles.title }}
               </h1>
+              <p>
+                {{ articles.description }}
+              </p>
               <h3 class="post-subtitle">
                 {{ articles.excerpt }}
               </h3>

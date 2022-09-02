@@ -97,6 +97,8 @@ hr {
   opacity: 0.25;
 }
 
+
+
 hr:not([size]) {
   height: 1px;
 }
@@ -237,7 +239,7 @@ sup {
 
 a {
   color: #ee0979;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: #be0761;
